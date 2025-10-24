@@ -1,6 +1,6 @@
 # An Efficient Lossless Compression Method for Periodic Signals Based on Adaptive Dictionary Predictive Coding
 
-## 📖 Overview
+## Overview
 
 This project implements a highly efficient **lossless compression algorithm** for periodic signals based on the **Adaptive Dictionary Predictive Coding (ADPC)** scheme. The method is designed to exploit the time-domain redundancy inherent in signals from applications like **ECG monitoring** and **Power Quality Monitoring (PQM)**.
 
@@ -8,7 +8,7 @@ The core technique uses a dynamic dictionary to predict future signal samples ba
 
 ***
 
-## ✨ Key Features
+## Key Features
 
 * **Lossless Compression:** Ensures **perfect reconstruction** of the original signal ($u(k) = s(k)$).
 * **Adaptive Prediction:** Uses a **two-dimensional dictionary** ($D$) to dynamically learn and predict repeating patterns based on the context $(s(k-2), s(k-1))$.
@@ -17,7 +17,7 @@ The core technique uses a dynamic dictionary to predict future signal samples ba
 
 ***
 
-## 📐 Mathematical Foundation
+## Mathematical Foundation
 
 The hybrid prediction strategy uses the following steps:
 
@@ -39,7 +39,7 @@ The hybrid prediction strategy uses the following steps:
 
 ***
 
-## 💻 Implementation Details
+## Implementation Details
 
 * **Platform:** Implemented in **Python 3** within a Google Colab environment.
 * **Dictionary Structure:** Uses **nested Python dictionaries** to model the 2D storage structure, enabling efficient $O(1)$ lookup and update operations.
@@ -68,7 +68,7 @@ $$E_{out} = [2, 3, 2, 3, 1, 0, 0, 0]$$
 
 ***
 
-## 📈 Performance Analysis
+## Performance Analysis
 
 The ADPC method achieves significantly higher compression efficiency compared to common techniques due to its highly concentrated error output.
 
@@ -83,7 +83,7 @@ The ADPC method achieves significantly higher compression efficiency compared to
 
 ***
 
-## 🚀 How to Run
+## How to Run
 
 1.  Open the [Google Colab Notebook](https://colab.research.google.com/drive/1bHTsEhnFeVEs8WV6ygRRuHfWkoXiOTcZ?usp=sharing).
 2.  Run all cells sequentially (Runtime $\rightarrow$ Run all).
@@ -91,7 +91,7 @@ The ADPC method achieves significantly higher compression efficiency compared to
 
 ***
 
-## ⚠️ Limitations and Future Scope
+## Limitations and Future Scope
 
 * **Noise Sensitivity:** The current model performs best on noise-free signals. Additive noise can increase prediction errors, degrading compression efficiency.
 * **Memory Growth:** Dictionary storage size can increase with very long input signals, although the 2D design mitigates this compared to higher dimensions.
@@ -100,6 +100,6 @@ The ADPC method achieves significantly higher compression efficiency compared to
 
 ***
 
-## 📚 References
+## References
 
 S. Dai, W. Liu, Z. Wang, K. Li, P. Zhu, and P. Wang, "An Efficient Lossless Compression Method for Periodic Signals Based on Adaptive Dictionary Predictive Coding," *Applied Sciences*, vol. 10, p. 4918, 2020.
